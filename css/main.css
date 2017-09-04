@@ -1,0 +1,11 @@
+.consolidate{
+    background-color: dodgerblue;
+}
+
+.consolidate .text-muted {
+    color: #f8f8f8 !important;
+}
+
+tbody th {
+    text-align: right;
+}

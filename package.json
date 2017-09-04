@@ -1,0 +1,55 @@
+{
+  "name": "election-calendar-sunnyvale",
+  "version": "1.0.0",
+  "description": "A tool to help the Sunnyvale Charter Review Commission consider windows for special elections in the event of council vacancies.",
+  "main": "main.js",
+  "homepage": "https://github.com/rmehlinger/election-calendar-sunnyvale#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmehlinger/election-calendar-sunnyvale.git"
+  },
+  "keywords": [
+    "bobtail",
+    "election",
+    "calendars",
+    "sunnyvale"
+  ],
+  "author": "Richard Mehlinger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bobtail-dev/bobtail-project-seed/issues"
+  },
+  "scripts": {
+    "start": "npm run build && node server.js",
+    "start-dev": "npm run watch & node server.js & npm run live-reload",
+    "mkdirs": "mkdir -p static/scripts && mkdir -p static/css && cp index.html static/index.html",
+    "watch": "npm run mkdirs && npm run watch-js & npm run watch-css",
+    "watch-js": "watchify src/main.jsx --transform babelify --verbose -o static/scripts/bundle.js",
+    "watch-css": "nodemon -w css -e css -x 'npm run copy-css'",
+    "build": "npm run mkdirs && npm run build-js && npm run copy-css",
+    "build-js": "browserify src/main.jsx --transform babelify -o static/scripts/bundle.js",
+    "copy-css": "cp -ra css/*.css static/css",
+    "live-reload": "live-reload static/**/* --port 9092"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "eslint": "^4.3.0",
+    "express": "^4.15.4",
+    "live-reload": "^1.1.0",
+    "nodemon": "^1.11.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "bobtail": "^2.3.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.20.1",
+    "moment-range": "^3.1.1"
+  }
+}

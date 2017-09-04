@@ -1,0 +1,10 @@
+{
+  "presets": ["babel-preset-env"],
+  "plugins": [
+    ["transform-react-jsx", {
+      "pragma": "rx.rxt.createElement"
+    }],
+    ["transform-es2015-modules-umd"]
+  ],
+  "moduleId": "election-calendar-sunnyvale"
+}
