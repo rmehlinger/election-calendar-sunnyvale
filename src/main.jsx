@@ -67,7 +67,7 @@ function App() {
       </p>
       <p>
         This app allows you to adjust the consolidation range and see how this affects the ranges
-        when special elections would have to be held during 2019 and 2020, given a resignation on
+        when special elections would have to be held during 2019 and 2020, given a vacancy on
         a particular date.
       </p>
       <p>
@@ -96,6 +96,15 @@ function App() {
           <YearTable year={2019} generalRange={generalRange} primaryRange={primaryRange} />
         </div>
       </p>
+      <footer>
+        <p>
+          This application is open source software, and is released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.
+        </p>
+        <p>
+          Source code for this application can be found on <a href="https://github.com/rmehlinger/election-calendar-sunnyvale">Github</a>.
+        </p>
+        <p>© 2018 Richard Mehlinger.</p>
+      </footer>
     </div>
   );
 }
@@ -124,13 +133,6 @@ function YearTable({primaryRange, generalRange}) {
       </tbody>
     </table>
   );
-}
-
-function loop(top) {
-  const ret = [];
-  for(let i = 0; i < top; i++) {
-
-  }
 }
 
 $(document).ready(() => $('body').append(<App />));
