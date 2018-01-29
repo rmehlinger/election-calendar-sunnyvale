@@ -1,5 +1,13 @@
-.consolidate{
+.consolidate {
     background-color: dodgerblue;
+}
+
+.discretionary {
+    background-color: lightseagreen;
+}
+
+.discretionary .text-muted {
+    color: #f8f8f8 !important;
 }
 
 .consolidate .text-muted {
@@ -8,4 +16,12 @@
 
 tbody th {
     text-align: right;
+}
+
+.legend {
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    border: 1px solid #666;
+    vertical-align: middle;
 }
