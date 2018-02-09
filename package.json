@@ -39,12 +39,12 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babelify": "^8.0.0",
-    "browserify": "^14.5.0",
+    "browserify": "^16.0.0",
     "eslint": "^4.3.0",
-    "express": "^4.15.4",
+    "express": "^4.16.2",
     "live-reload": "^1.1.0",
-    "nodemon": "^1.11.0",
-    "watchify": "^3.9.0"
+    "nodemon": "^1.14.12",
+    "watchify": "^3.10.0"
   },
   "dependencies": {
     "bobtail": "^2.3.0",
