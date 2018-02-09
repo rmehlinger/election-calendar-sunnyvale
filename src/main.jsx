@@ -89,7 +89,7 @@ function App() {
             to consolidate the special election.</li>
           <li><div class="special legend"/> special election required.</li>
         </ul>
-        <form class="form-horizontal col-md-6">
+        <div class="form-horizontal col-md-6">
           <p class="form-group">
             <span class="col-md-6 text-right">
               <label class="control-label">
@@ -102,7 +102,7 @@ function App() {
             <span class="col-md-6 text-right"><label class="control-label">Primary Date</label></span>
             <span class="col-md-6">{$primary}</span>
           </p>
-        </form>
+        </div>
       </div>
       <h3>
         With a consolidation range of <strong>{consolidation}</strong> days, <strong>{validDays}</strong> days
